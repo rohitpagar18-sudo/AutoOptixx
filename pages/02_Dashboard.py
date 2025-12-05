@@ -36,14 +36,14 @@ SUCCESS_COLOR = "#00b894"
 WARNING_COLOR = "#fdcb6e"
 
 st.set_page_config(
-    page_title="Dashboard - Analytics",
+    page_title="📊Dashboard - Analytics",
     layout="wide",
 )
 
 # Add logo to sidebar
-with st.sidebar:
-    st.markdown(f'<div style="text-align: center; margin-bottom: 20px;"><img src="data:image/png;base64,{LOGO_BASE64}" alt="AutoOptix Logo" style="height: 150px;"></div>', unsafe_allow_html=True)
-    st.markdown('---')
+# with st.sidebar:
+#     st.markdown(f'<div style="text-align: center; margin-bottom: 20px;"><img src="data:image/png;base64,{LOGO_BASE64}" alt="AutoOptix Logo" style="height: 150px;"></div>', unsafe_allow_html=True)
+#     st.markdown('---')
 
 # Add page styling with modern 3D table design
 st.markdown("""
@@ -1303,7 +1303,7 @@ def main():
     # Professional Dashboard Header with animation
     st.markdown("""
     <div class="dashboard-title">
-        <h1> Dashboard Analytics</h1>
+        <h1> 📊Dashboard Analytics</h1>
         <p>Real-time Resource Estimation & Automation Analytics</p>
     </div>
     """, unsafe_allow_html=True)

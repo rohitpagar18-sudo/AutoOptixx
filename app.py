@@ -320,7 +320,7 @@ if 'processed' not in st.session_state:
     st.session_state.processed = False
 
 # Main Title - Logo only
-st.markdown(f'<div style="text-align: center; margin-bottom: 0.1px;"><img src="data:image/png;base64,{LOGO_BASE64}" alt="AutoOptix Logo" style="height: 240px;"></div>', unsafe_allow_html=True)
+st.markdown(f'<div style="text-align: center; margin-bottom: 0.1px;"><img src="data:image/png;base64,{LOGO_BASE64}" alt="AutoOptix Logo" style="height: 200px;"></div>', unsafe_allow_html=True)
 
 st.markdown('<div class="divider-premium"></div>', unsafe_allow_html=True)
 

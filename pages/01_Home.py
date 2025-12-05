@@ -40,9 +40,10 @@ st.set_page_config(
 )
 
 # Add logo to sidebar
-with st.sidebar:
-    st.markdown(f'<div style="text-align: center; margin-bottom: 20px;"><img src="data:image/png;base64,{LOGO_BASE64}" alt="AutoOptix Logo" style="height: 150px;"></div>', unsafe_allow_html=True)
-    st.markdown('---')
+
+# with st.sidebar:
+#     st.markdown(f'<div style="text-align: center; margin-bottom: 10px;"><img src="data:image/png;base64,{LOGO_BASE64}" alt="AutoOptix Logo" style="height: 100px;"></div>', unsafe_allow_html=True)
+#     st.markdown('---')
 
 st.markdown("""
 <style>

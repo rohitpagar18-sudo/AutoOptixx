@@ -1304,7 +1304,7 @@ def main():
     st.markdown("""
     <div class="dashboard-title">
         <h1> 📊Dashboard Analytics</h1>
-        <p>Real-time Resource Estimation & Automation Analytics</p>
+        <p>Resource Estimation & Automation Analytics</p>
     </div>
     """, unsafe_allow_html=True)
     

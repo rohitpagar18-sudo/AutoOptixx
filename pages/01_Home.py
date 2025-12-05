@@ -41,9 +41,9 @@ st.set_page_config(
 
 # Add logo to sidebar
 
-# with st.sidebar:
-#     st.markdown(f'<div style="text-align: center; margin-bottom: 10px;"><img src="data:image/png;base64,{LOGO_BASE64}" alt="AutoOptix Logo" style="height: 100px;"></div>', unsafe_allow_html=True)
-#     st.markdown('---')
+with st.sidebar:
+    st.markdown(f'<div style="text-align: center; margin-bottom: 20px;"><img src="data:image/png;base64,{LOGO_BASE64}" alt="AutoOptix Logo" style="height: 100px;"></div>', unsafe_allow_html=True)
+    st.markdown('---')
 
 st.markdown("""
 <style>
@@ -61,7 +61,7 @@ st.markdown("""
     
     @keyframes slideInLeft {
         from {
-            opacity: 0;
+            opacity: 0  ;
             transform: translateX(-20px);
         }
         to {
@@ -312,8 +312,6 @@ with st.expander("📌 **Required columns**: Ticket ID, Description, Assignment 
 """,
         unsafe_allow_html=True,
     )
-
-
 
 # Initialize session state with all necessary variables
 if 'df_uploaded' not in st.session_state:

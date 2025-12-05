@@ -291,10 +291,29 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown(f'<div style="text-align: center; margin-bottom: 0;"><img src="data:image/png;base64,{LOGO_BASE64}" alt="AutoOptix Logo" style="height: 240px;"></div>', unsafe_allow_html=True)
-st.markdown('<div class="header-subtitle" style="margin-bottom: 0;">Analyze tickets. Optimize operations. Forecast resources.</div>', unsafe_allow_html=True)
-#st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
+#st.markdown('<div class="header-subtitle" style="margin-bottom: 0;">Analyze tickets. Optimize operations. Forecast resources.</div>', unsafe_allow_html=True)
+st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
 
-st.markdown("---")
+with st.expander("📌 **Required columns**: Ticket ID, Description, Assignment Group, Closed Month, Priority"):
+    st.markdown(
+        """
+<div style="
+  background:#eef6ff;
+  border:1px solid #d8e4f0;
+  border-radius:10px;
+  padding:12px 14px;
+  font-size:0.95rem;
+">
+  <ul style="margin:0 0 6px 22px;">
+    <li>Headers must match exactly</li>
+    <li>File format: <code>.xlsx</code></li>
+  </ul>
+</div>
+""",
+        unsafe_allow_html=True,
+    )
+
+
 
 # Initialize session state with all necessary variables
 if 'df_uploaded' not in st.session_state:
